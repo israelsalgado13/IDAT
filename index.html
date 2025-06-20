@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Delivery</title>
+    <style>
+       :root {
+            --fuente-principal: 'Roboto', sans-serif;
+            --primario: #e8505b;
+            --secundario: #455a64;
+            --negro: #000;
+            --blanco: #ffffff;
+            --gris-claro: #eceeef;
+        }
+
+        body {
+            font-family: var(--fuente-principal);
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .header {
+            background-color: var(--primario);
+            color: var(--blanco);
+            padding: 20px;
+            text-align: center;
+        }
+
+        .header img {
+            width: 50px;
+        }
+
+        .header nav {
+            margin-top: 10px;
+        }
+
+        .header nav a {
+            color: var(--blanco);
+            margin: 0 10px;
+            text-decoration: none;
+        }
+
+        .header .signup {
+            background-color: var(--secundario);
+            color: var(--blanco);
+            padding: 10px 20px;
+            border-radius: 5px;
+            text-decoration: none;
+        }
+
+        .hero {
+            background-color: var(--primario);
+            color: var(--blanco);
+            padding: 50px 20px;
+            text-align: center;
+        }
+
+        .hero form {
+            max-width: 400px;
+            margin: 0 auto;
+        }
+
+        .hero form input {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: none;
+            border-radius: 5px;
+        }
+
+        .hero form button {
+            background-color: var(--secundario);
+            color: var(--blanco);
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .hero img {
+            width: 300px;
+            margin-top: 20px;
+        }
+
+        .how-it-works {
+            padding: 50px 20px;
+            text-align: center;
+        }
+
+        .how-it-works .card {
+            background-color: var(--gris-claro);
+            padding: 20px;
+            margin: 20px;
+            display: inline-block;
+            width: 30%;
+            vertical-align: top;
+            border-radius: 10px;
+        }
+
+        .how-it-works .card img {
+            width: 100px;
+        }
+
+        .testimonials {
+            background-color: var(--negro);
+            color: var(--blanco);
+            padding: 50px 20px;
+            text-align: center;
+        }
+
+        .testimonials .card {
+            background-color: var(--secundario);
+            padding: 20px;
+            margin: 20px;
+            display: inline-block;
+            width: 45%;
+            vertical-align: top;
+            border-radius: 10px;
+        }
+
+        .testimonials .card img {
+            width: 50px;
+            border-radius: 50%;
+        }
+
+        .favorite-restaurants {
+            padding: 50px 20px;
+            text-align: center;
+        }
+
+        .favorite-restaurants .card {
+            background-color: var(--gris-claro);
+            padding: 20px;
+            margin: 20px;
+            display: inline-block;
+            width: 45%;
+            vertical-align: top;
+            border-radius: 10px;
+        }
+
+        .favorite-restaurants .card img {
+            width: 100px;
+        }
+
+        .earn-money {
+            background-color: var(--primario);
+            color: var(--blanco);
+            padding: 50px 20px;
+            text-align: center;
+        }
+
+        .earn-money img {
+            width: 300px;
+        }
+
+        .earn-money button {
+            background-color: var(--secundario);
+            color: var(--blanco);
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-top: 20px;
+        }
+
+        .footer {
+            background-color: var(--negro);
+            color: var(--blanco);
+            padding: 20px;
+            text-align: center;
+        }
+
+        .footer nav a {
+            color: var(--blanco);
+            margin: 0 10px;
+            text-decoration: none;
+        }
+        </style>
+</head>
+
+<body>
+    <header class="header">
+        <img src="img/logo.svg" alt="App Comida Logo">
+        <nav>
+            <a href="#">Inicio</a>
+            <a href="#">Grupo Comida</a>
+            <a href="#">Regístrate</a>
+        </nav>
+        <a class="signup" href="#">Registrar Restaurante</a>
+    </header>
+    <section class="hero">
+        <h1>Encuentra y Pide comida de tu restaurante favorito</h1>
+        <form>
+            <input type="text" placeholder="Ingresa tu dirección">
+            <button type="submit">Buscar</button>
+        </form>
+        <img src="img/dibujo_repartidor.svg" alt="Delivery">
+    </section>
+    <section class="how-it-works">
+        <h2>¿Cómo funciona?</h2>
+        <div class="card">
+            <img src="img/paso_1.png" alt="Restaurant">
+            <h3>Selecciona Restaurante</h3>
+        </div>
+        <div class="card">
+            <img src="img/paso_2.png" alt="Meal">
+            <h3>Elige tu Platillo</h3>
+        </div>
+        <div class="card">
+            <img src="img/paso_3.png" alt="Delivery Bike">
+            <h3>Envío al Instante</h3>
+        </div>
+    </section>
+    <section class="testimonials">
+        <h2>Testimonios</h2>
+        <div class="card">
+            <img src="img/testimonial1.jpg" alt="Avatar 1">
+            <p>"Una excelente APP, puedo seleccionar de una gran cantidad de opciones y pagar en tarjeta o efectivo segun me convenga."</p>
+            <h4>Juan Pérez</h4>
+        </div>
+        <div class="card">
+            <img src="img/testimonial2.jpg" alt="Avatar 2">
+            <p>"Una excelente APP, puedo seleccionar de una gran cantidad de opciones y pagar en tarjeta o efectivo segun me convenga"</p>
+            <h4>Itzel Cruz</h4>
+        </div>
+        <div class="card">
+            <img src="img/testimonial3.jpg" alt="Avatar 3">
+            <p>"Una excelente APP, puedo seleccionar de una gran cantidad de opciones y pagar en tarjeta o efectivo segun me convenga"</p>
+            <h4>Rocio Rodriguez</h4>
+        </div>
+        <div class="card">
+            <img src="img/testimonial4.jpg" alt="Avatar 4">
+            <p>"Una excelente APP, puedo seleccionar de una gran cantidad de opciones y pagar en tarjeta o efectivo segun me convenga"</p>
+            <h4>Ana Martínez</h4>
+        </div>
+        <div class="card">
+            <img src="img/testimonial5.jpg" alt="Avatar 5">
+            <p>"Una excelente APP, puedo seleccionar de una gran cantidad de opciones y pagar en tarjeta o efectivo segun me convenga"</p>
+            <h4>Ana Martínez</h4>
+        </div>
+    </section>
+    <section class="favorite-restaurants">
+        <h2>Restaurantes Favoritos</h2>
+        <div class="card">
+            <img src="img/logo_ensaladas.png" alt="Restaurant 1">
+            <h3>Green Ensaladas</h3>
+            <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit."</p>
+        </div>
+        <div class="card">
+            <img src="img/logo_ensaladas.png" alt="Restaurant 2">
+            <h3>Green Ensaladas</h3>
+            <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit."</p>
+        </div>
+        <div class="card">
+            <img src="img/logo_ensaladas.png" alt="Restaurant 3">
+            <h3>Green Ensaladas</h3>
+            <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit."</p>
+        </div>
+        <div class="card">
+            <img src="img/logo_ensaladas.png" alt="Restaurant 4">
+            <h3>Green Ensaladas</h3>
+            <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit."</p>
+        </div>
+        <div class="card">
+            <img src="img/logo_ensaladas.png" alt="Restaurant 5">
+            <h3>Green Ensaladas</h3>
+            <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit."</p>
+        </div>
+        <div class="card">
+            <img src="img/logo_ensaladas.png" alt="Restaurant 6">
+            <h3>Green Ensaladas</h3>
+            <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit."</p>
+        </div>
+    </section>
+    <section class="earn-money">
+        <h2>Gana dinero con AppComida</h2>
+        <img src="img/repartidor.jpg" alt="Delivery Person">
+        <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit."</p>
+        <button>Más Información</button>
+    </section>
+    <footer class="footer">
+        <nav>
+            <a href="#">Nosotros</a>
+            <a href="#">Navegación</a>
+            <a href="#">Contacto</a>
+        </nav>
+    </footer>
+</body>
+</html>
